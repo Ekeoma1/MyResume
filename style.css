@@ -38,7 +38,7 @@ a {
 }
 
 main {
-  padding: 100px 50px 50px 50px;
+  padding: 50px;
   box-sizing: border-box;
 }
 
@@ -71,10 +71,6 @@ section > h6 {
 @media screen and (max-width: 540px) {
   .cv-container {
     grid-template-columns: auto;
-  }
-
-  main {
-    padding: 50px;
   }
 
   .personal-profile > h6 {
