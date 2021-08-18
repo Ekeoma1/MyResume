@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --pri-color: #335384;
+  --sec-color: #5ba7d1;
+}
+
+.cv-container {
+  display: grid;
+  grid-template-columns: 250px auto;
+}
+
+.sidebar {
+  padding: 50px 20px;
+  box-sizing: border-box;
+  background-color: var(--pri-color);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url(./images/eke.JPG);
+  background-size: cover;
+}
+
+.contact-details span > a,
+.contact-details span {
+  color: white;
+}
+
+main {
+  padding: 100px 50px 50px 50px;
+  box-sizing: border-box;
+}
+
+header > h1 {
+  color: var(--pri-color);
+  text-transform: uppercase;
+}
+
+.line-divider {
+  width: 70px;
+  height: 2px;
+  background-color: #000;
+}
+
+header > h6 {
+  text-transform: uppercase;
+  color: var(--sec-color);
+  font-weight: 600;
+}
+
+section > h6 {
+  text-transform: uppercase;
+  color: var(--sec-color);
+}
+
+.personal-profile > h6 {
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 540px) {
+  .cv-container {
+    grid-template-columns: auto;
+  }
+
+  main {
+    padding: 50px;
+  }
+
+  .personal-profile > h6 {
+    margin-top: 20px;
+  }
+}
